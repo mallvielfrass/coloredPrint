@@ -7,7 +7,7 @@
 
 - specify tags directly in the formatting string;
 - Support prinft/print/println;
-##Color:
+## Color:
 -	yst    Yellow
 -	ybt    Yellow, Bold
 
@@ -22,7 +22,11 @@
 
 -	wst    White
 -	wbt    White, Bold
-
+## Color Description:
+### in hashtag:
+- first char it is Color name(Red,Blue..)
+- second char it is font weight slim\bold
+- first char it is background color transparent (another colors not implemented yet)
 ```go
 package main
 import "github.com/mallvielfrass/coloredPrint/fmc"
