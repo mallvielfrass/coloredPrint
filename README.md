@@ -2,7 +2,7 @@
 
 # FMC
 ##### Library  for coloring text in the console.
-###powered by https://github.com/fatih/color
+### powered by https://github.com/fatih/color
 ### Features
 
 - specify tags directly in the formatting string;
