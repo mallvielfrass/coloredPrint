@@ -27,6 +27,7 @@
 - first char it is Color name(Red,Blue..)
 - second char it is font weight slim\bold
 - first char it is background color transparent (another colors not implemented yet)
+## Examples:
 ```go
 package main
 import "github.com/mallvielfrass/coloredPrint/fmc"
