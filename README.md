@@ -2,6 +2,7 @@
 
 # FMC
 ##### Library  for coloring text in the console.
+###powered by https://github.com/fatih/color
 ### Features
 
 - specify tags directly in the formatting string;
@@ -38,6 +39,8 @@ fmc.Printfln("#ybt  %s", "I")
 fmc.Println("#bbt Println")
 }
 ```
-#Result
-[![Result](https://raw.githubusercontent.com/mallvielfrass/coloredPrint/main/fmc/scrot_2021-01-22-10_1920x1080.png "Result")](https://raw.githubusercontent.com/mallvielfrass/coloredPrint/main/fmc/scrot_2021-01-22-10_1920x1080.png "Result")
-###powered by https://github.com/fatih/color
+# Result
+
+[![Result](https://raw.githubusercontent.com/mallvielfrass/coloredPrint/main/fmc/scrot_2021-01-22-10_1920x1080.png "Result")](https://raw.githubusercontent.com/mallvielfrass/coloredPrint/main/fmc/scrot_2021-01-22-10_1920x1080.png "Result");
+
+
