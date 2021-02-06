@@ -3,6 +3,7 @@ package fmc
 import (
 	"fmt"
 	"os"
+	"runtime"
 	"strconv"
 	"strings"
 
@@ -284,4 +285,44 @@ func printfT(format string, a ...interface{}) {
 	//fmt.Print(letter)
 
 	//}
+}
+
+//Caller log run function
+func Caller() {
+	pc := make([]uintptr, 40)
+	n := runtime.Callers(0, pc)
+
+	// Printfln("#rbtn= #gbt%d", n)
+	pc = pc[2 : n-2] // pass only valid pcs to runtime.CallersFrames
+	frames := runtime.CallersFrames(pc)
+	Printf("#wbtRun> ")
+	i := 0
+	for {
+
+		frame, more := frames.Next()
+		if i == 0 {
+
+		} else {
+			Printf("\t#rbtFrom> ")
+
+		}
+
+		name, line, file := frame.Func, frame.Line, frame.File
+		//	fmt.Println(name)
+		if name == nil {
+			//	fmt.Println("name==nil")
+			f := runtime.FuncForPC(frame.PC)
+			//file, line := f.FileLine(frame.PC)
+			//fmt.Printf("%s:%d %s\n", file, line, f.Name())
+			Printfln("#gbt%s#wbt:#gbt%d #ybt%s", file, line, f.Name())
+		} else {
+			Printfln("#gbt%s#wbt:#gbt%d #ybt%s", file, line, name.Name())
+		}
+
+		//	}
+		i++
+		if !more {
+			break
+		}
+	}
 }
